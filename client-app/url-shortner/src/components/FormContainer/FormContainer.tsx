@@ -15,7 +15,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
 
 
         try {
-            await axios.post("http://localhost:5001/api/shortUrl", {
+            await axios.post("https://url-shortner-e0g0.onrender.com/api/shortUrl", {
                 fullUrl: fullUrl
             }, {
                 headers: {
