@@ -10,7 +10,7 @@ const dbConfig_1 = __importDefault(require("./config/dbConfig"));
 const shortUrl_1 = __importDefault(require("./routes/shortUrl"));
 dotenv_1.default.config();
 (0, dbConfig_1.default)();
-const port = process.env.PORT;
+const port = process.env.PORT || 5001;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
