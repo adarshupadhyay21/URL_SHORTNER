@@ -20,6 +20,9 @@ app.use((0, cors_1.default)({
     credentials: true, // Allow cookies & authentication headers
 }));
 app.use("/api", shortUrl_1.default);
+app.get("/", (req, res) => {
+    res.send("Hello world");
+});
 app.listen(port, () => {
     console.log(`Server started succesfuly on port : ${port}`);
 });
